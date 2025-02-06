@@ -1,0 +1,35 @@
+<div class="ng-cloak extable-pager">
+    <ul class="pagination">
+        <li>
+            <span *ngIf="totalItems < 1" class="pager-label">No items to display</span>
+            <span *ngIf="totalItems > 0" class="pager-label">
+                <span *ngIf="totalItems > 0 && addNewLoad">Newly added, </span>
+                {{startItemNumber}} - {{endItemNumber}} OF
+                <span> {{totalItems}}</span>
+            </span>
+        </li>
+        <!--Page number buttons-->
+        <!--<li [ngClass]="{'disabled': !page.active && !page.current, 'active': page.current}"-->
+        <li [class.disabled]="!page.active && !page.current" [class.active]="page.current"
+            *ngFor="let page of pages" [ngSwitch]="page.type">
+            <a *ngSwitchCase="'prev'" (click)="selectPage(page.number, $event)" href="">&laquo;</a>
+            <a *ngSwitchCase="'first'" (click)="selectPage(page.number, $event)" href=""><span [textContent]="page.number"></span></a>
+            <a *ngSwitchCase="'page'" (click)="selectPage(page.number, $event)" href=""><span [textContent]="page.number"></span></a>
+            <a *ngSwitchCase="'more'" (click)="selectPage(page.number, $event)" href="">&#8230;</a>
+            <a *ngSwitchCase="'last'" (click)="selectPage(page.number, $event)" href=""><span [textContent]="page.number"></span></a>
+            <a *ngSwitchCase="'next'" (click)="selectPage(page.number, $event)" href="">&raquo;</a>
+        </li>
+        <li>
+            <!--Paging size dropdown list-->
+            <div class="size-selector">
+                <select id="ddlPageSize" class="form-ddl-adj"
+                        [(ngModel)]="sizeSelected" (ngModelChange)="onSizeChange($event)">
+                    <option *ngFor="let option of sizeOptions" [ngValue]="option">
+                        {{option.text}}
+                    </option>
+                </select>
+                <span class="pager-label page-label-down">&#160;&#160;Items per page</span>
+            </div>
+        </li>
+    </ul>
+</div>

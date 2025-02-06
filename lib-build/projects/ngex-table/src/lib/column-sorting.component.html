@@ -1,0 +1,14 @@
+<div class="extable-col-sorting">
+    <a (click)="toggleSort($event)" class="cursor-pointer" title="{{ctrlKeyHint}}">        
+        <i class="sort-icon" #sortIcon></i>
+    </a>
+    <!--Sequence number dropdown list-->
+    <div *ngIf="showSequenceOption" class="sequence-selector" #sequenceDiv>
+        <select id="ddlSortSequence" #sequenceSelect
+                [(ngModel)]="sequenceSelected" (ngModelChange)="onSequenceChange($event)">
+            <option *ngFor="let option of sequenceOptions" [ngValue]="option">
+                {{option.text}}
+            </option>
+        </select>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div *ngIf="showSortingOptions" class="extable-sort-type margin-right-1">
+    <span class="padding-left">Sorting:&#160;</span>
+    <select class="form-control select-style" [(ngModel)]="sortingOption" (ngModelChange)="onSortingOptionChange($event)">
+        <option value="single">Single Column</option>
+        <option value="multiple">Multiple Columns</option>
+    </select>
+</div>
+            
