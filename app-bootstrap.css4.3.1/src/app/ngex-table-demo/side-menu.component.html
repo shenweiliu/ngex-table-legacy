@@ -1,0 +1,17 @@
+<div class='main-nav nav-panel nav-panel-collapse collapse' #menuItems>           
+    <div class='nav-panel-brand'>        
+        <a [routerLink]="['/client-paging']" (click)="menuItemClicked()">Menu Items</a>
+    </div>
+    <ul class='nav-list'>
+        <li [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/client-paging']" (click)="menuItemClicked()">
+                <span class='fa fa-home'></span> Client-side Pagination
+            </a>
+        </li>
+        <li [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/server-paging']" (click)="menuItemClicked()">
+                <span class='fa fa-list'></span> Server-side Pagination
+            </a>
+        </li>
+    </ul> 
+</div>

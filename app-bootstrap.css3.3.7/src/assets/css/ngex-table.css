@@ -1,0 +1,253 @@
+/*== column-sorting ==*/
+.extable-col-sorting {
+    display: inline;
+}
+
+.extable-col-sorting .sort-icon {
+    color: #c5c5c5;
+    padding-left: 0.5rem;
+}
+
+.extable-col-sorting .sequence-selector {
+    display: inline;
+}
+
+/*For IE 11*/
+.extable-col-sorting .sequence-selector select::-ms-expand {
+    display: none;
+}
+
+/*size items are bs-css 3.3.7 specific*/
+.extable-col-sorting .sequence-selector select {
+    font-size: 1.15rem;
+    font-weight: normal;
+    width: 1.2rem;
+    height: 1.65rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #efeded;
+    margin-left: 0.15rem;
+    -ms-text-align-last: center;
+    text-align-last: center;
+    vertical-align: middle;
+    border: none;
+    border-radius: 0.15rem;
+}
+
+/*== multi-sorting-command ==*/
+.extable-sort-command {
+    max-height: 0px;
+    overflow-y: hidden;
+    -moz-transition: ease-in-out 100ms max-height;
+    -o-transition: ease-in-out 100ms max-height;
+    -webkit-transition: ease-in-out 100ms max-height;
+    transition: ease-in-out 100ms max-height;
+}
+
+.extable-sort-command.opened {
+    max-height: 10rem;
+    -moz-transition: ease-in-out 150ms max-height;
+    -o-transition: ease-in-out 150ms max-height;
+    -webkit-transition: ease-in-out 150ms max-height;
+    transition: ease-in-out 150ms max-height;
+    padding: 0.4rem;
+}
+
+.extable-sort-command .sort-box-label {
+    color: #808080;
+    font-weight: 600;
+    padding-right: 1.5rem;
+}
+
+.extable-sort-command .btn {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.extable-sort-command a {
+    font-size: 0.95rem;
+    font-weight: normal;
+    color: #337ab7 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.extable-sort-command .form-inline {
+    display: -ms-flexbox;
+    display: inline-flex; /*overwrite bs-css: flex*/
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*== options ==*/
+.extable-option {
+}
+
+/*Added (bs-css 3.3.7 has no form-inline)*/
+.extable-option .form-inline {
+    display: -ms-flexbox;
+    display: inline-flex; /*overwrite bs-css: flex*/
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.extable-option .option-box {
+    width: 100%;
+    /*margin-top: 0.4rem;*/
+    padding-bottom: 0.4rem;
+    justify-content: space-between;
+    color: #23527c;
+    font-size: 1.35rem; /*for bs-css 3.3.7*/   
+    border-bottom: 1px solid #dee2e6;
+}
+
+.extable-option a {
+    color: #337ab7 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.extable-option a:hover,
+.extable-option a:focus {
+    color: #23527c !important;
+    text-decoration: underline !important;
+}
+
+.extable-option .option-link {
+    text-align: right;
+    margin-right: 1.5rem;
+}
+
+.extable-option .option-hide-link {
+    width: 100%;
+}
+
+.extable-option .option-box-hide {
+    height: 0.4rem;
+}
+
+.extable-option .padding-left {
+    padding-left: 0.5rem;
+}
+
+/*bs-css 3.3.7 needs no margin-top*/
+.extable-option .margin-top-04 {
+    margin-top: 0;
+}
+
+.extable-option .margin-left-1 {
+    margin-left: 1rem;
+}
+
+.extable-option .margin-right-1 {
+    margin-right: 1rem;
+}
+
+.extable-option .smaller-font-size {
+    font-size: 0.9rem;
+}
+
+.extable-option .Larger-font-size {
+    font-size: 1.7rem; /*bs-css 3.3.7*/
+}
+
+/*== sorting-type ==*/
+.extable-sort-type {
+}
+
+/*bs-css 3.3.7 specific*/
+.extable-sort-type .select-style {
+    height: 2.25rem;
+    color: #23527c;
+    font-size: 1.25rem;
+    font-weight: normal
+}    
+
+.extable-sort-type.margin-right-1 {
+    margin-right: 1rem;
+}    
+
+.extable-sort-type .padding-left {
+    padding-left: 0.5rem;
+}
+
+/*== pagination ==*/
+.extable-pager {
+}
+
+/*Overwrite Bootstrap 4 display: flex*/
+.extable-pager .pagination {
+    display: inline-block;
+    /*margin: 0.25rem 0rem;*/
+    width: 100%;
+}
+
+.extable-pager .pager-label {
+    /*color: #999999 !important;*/
+    color: #428bca;
+    white-space: nowrap;
+}
+
+.extable-pager .page-label-down {
+    padding-top: 0.33rem;
+}
+
+.extable-pager .size-selector {
+    margin-top: 0.25rem;
+    margin-right: 1.5rem;
+    float: right;
+}
+
+.extable-pager .form-ddl-adj {
+    display: inline-block;
+    width: auto;
+}
+
+.extable-pager .pagination > li > a,
+.extable-pager .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 0.25rem 0.7rem;
+    margin-left: -1px;
+    /*color: #999999;*/
+    line-height: 1.4285;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    /*border: 1px solid #ddd;*/
+    border: none;
+}
+
+.extable-pager .pagination > .active > a,
+.extable-pager .pagination > .active > span,
+.extable-pager .pagination > .active > a:hover,
+.extable-pager .pagination > .active > span:hover,
+.extable-pager .pagination > .active > a:focus,
+.extable-pager .pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.extable-pager .pagination > li > a:hover,
+.extable-pager .pagination > li > span:hover,
+.extable-pager .pagination > li > a:focus,
+.extable-pager .pagination > li > span:focus {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+
+
+
+
+

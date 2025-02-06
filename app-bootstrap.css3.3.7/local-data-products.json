@@ -1,0 +1,532 @@
+[
+    {
+        "ProductId": 1,
+        "ProductName": "Bath Rug",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 24.50,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-03-10T00:00:00"
+    },
+    {
+        "ProductId": 2,
+        "ProductName": "Bath Rug 2",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 26.20,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2016-07-10T00:00:00"
+    },
+    {
+        "ProductId": 3,
+        "ProductName": "Shower Curtain 2",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 32.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2016-07-13T00:00:00"
+    },
+    {
+        "ProductId": 4,
+        "ProductName": "Bath Rug 3",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 27.10,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-07-10T00:00:00"
+    },
+    {
+        "ProductId": 5,
+        "ProductName": "Shower Curtain 3",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 35.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-07-13T00:00:00"
+    },
+    {
+        "ProductId": 6,
+        "ProductName": "Bath Rug 4",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 28.80,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-08-10T00:00:00"
+    },
+    {
+        "ProductId": 7,
+        "ProductName": "Shower Curtain 4",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 37.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-12-13T00:00:00"
+    },
+    {
+        "ProductId": 29,
+        "ProductName": "Soap Dispenser",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 12.40,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": "2018-08-05T00:00:00"
+    },
+    {
+        "ProductId": 30,
+        "ProductName": "Soap Dispenser 2",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 13.40,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": "2016-08-05T00:00:00"
+    },
+    {
+        "ProductId": 31,
+        "ProductName": "Soap Dispenser 3",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 19.40,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": "2018-08-05T00:00:00"
+    },
+    {
+        "ProductId": 39,
+        "ProductName": "Toilet Tissue",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 15.00,
+        "StatusCode": 3,
+        "StatusDescription": "Back Ordered",
+        "AvailableSince": "2018-05-16T00:00:00"
+    },
+    {
+        "ProductId": 40,
+        "ProductName": "Toilet Tissue 2",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 16.00,
+        "StatusCode": 3,
+        "StatusDescription": "Back Ordered",
+        "AvailableSince": "2016-05-16T00:00:00"
+    },
+    {
+        "ProductId": 41,
+        "ProductName": "Toilet Tissue 3",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 20.00,
+        "StatusCode": 3,
+        "StatusDescription": "Back Ordered",
+        "AvailableSince": "2018-05-16T00:00:00"
+    },
+    {
+        "ProductId": 47,
+        "ProductName": "Shower Curtain",
+        "CategoryId": 1,
+        "CategoryName": "Bath",
+        "UnitPrice": 30.99,
+        "StatusCode": 4,
+        "StatusDescription": "Discontinued",
+        "AvailableSince": "2017-07-13T00:00:00"
+    },
+    {
+        "ProductId": 8,
+        "ProductName": "Branket",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 60.00,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2017-08-22T00:00:00"
+    },
+    {
+        "ProductId": 9,
+        "ProductName": "Sheet Set",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 40.69,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-07-26T00:00:00"
+    },
+    {
+        "ProductId": 10,
+        "ProductName": "Pillow",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 10.20,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-10-04T00:00:00"
+    },
+    {
+        "ProductId": 11,
+        "ProductName": "Sheet Set 2",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 43.79,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2016-07-26T00:00:00"
+    },
+    {
+        "ProductId": 12,
+        "ProductName": "Pillow 2",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 16.20,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2016-06-04T00:00:00"
+    },
+    {
+        "ProductId": 13,
+        "ProductName": "Bed Curtain 2",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 19.80,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-06-11T00:00:00"
+    },
+    {
+        "ProductId": 14,
+        "ProductName": "Branket 3",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 65.00,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-08-22T00:00:00"
+    },
+    {
+        "ProductId": 15,
+        "ProductName": "Sheet Set 3",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 50.69,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-07-26T00:00:00"
+    },
+    {
+        "ProductId": 16,
+        "ProductName": "Pillow 3",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 17.70,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-06-04T00:00:00"
+    },
+    {
+        "ProductId": 32,
+        "ProductName": "Mattress Protector",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 30.40,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": "2017-08-22T00:00:00"
+    },
+    {
+        "ProductId": 33,
+        "ProductName": "Mattress Protector 2",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 31.40,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": "2018-08-22T00:00:00"
+    },
+    {
+        "ProductId": 34,
+        "ProductName": "Bed Curtain 3",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 21.50,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": "2018-08-22T00:00:00"
+    },
+    {
+        "ProductId": 42,
+        "ProductName": "Branket 2",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 62.00,
+        "StatusCode": 3,
+        "StatusDescription": "Back Ordered",
+        "AvailableSince": "2018-08-22T00:00:00"
+    },
+    {
+        "ProductId": 43,
+        "ProductName": "Mattress Protector 3",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 34.80,
+        "StatusCode": 3,
+        "StatusDescription": "Back Ordered",
+        "AvailableSince": "2018-08-22T00:00:00"
+    },
+    {
+        "ProductId": 48,
+        "ProductName": "Bed Curtain",
+        "CategoryId": 2,
+        "CategoryName": "Bedding",
+        "UnitPrice": 18.60,
+        "StatusCode": 4,
+        "StatusDescription": "Discontinued",
+        "AvailableSince": "2017-07-11T00:00:00"
+    },
+    {
+        "ProductId": 17,
+        "ProductName": "Baking Pan",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 10.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2017-10-22T00:00:00"
+    },
+    {
+        "ProductId": 18,
+        "ProductName": "Knife Set",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 70.00,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2017-10-10T00:00:00"
+    },
+    {
+        "ProductId": 19,
+        "ProductName": "Baking Pan 2",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 12.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-10-14T00:00:00"
+    },
+    {
+        "ProductId": 20,
+        "ProductName": "Can Opener 2",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 8.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2016-09-18T00:00:00"
+    },
+    {
+        "ProductId": 21,
+        "ProductName": "Knife Set 2",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 76.00,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2016-10-10T00:00:00"
+    },
+    {
+        "ProductId": 22,
+        "ProductName": "Water Pitcher 2",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 39.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": null
+    },
+    {
+        "ProductId": 23,
+        "ProductName": "Baking Pan 3",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 14.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-12-20T00:00:00"
+    },
+    {
+        "ProductId": 24,
+        "ProductName": "Knife Set 3",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 70.00,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2017-10-10T00:00:00"
+    },
+    {
+        "ProductId": 25,
+        "ProductName": "Pressure Cooker 3",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 90.50,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2017-10-20T00:00:00"
+    },
+    {
+        "ProductId": 26,
+        "ProductName": "Baking Pan 4",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 10.99,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-10-27T00:00:00"
+    },
+    {
+        "ProductId": 27,
+        "ProductName": "Knife Set 4",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 70.00,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2018-10-10T00:00:00"
+    },
+    {
+        "ProductId": 28,
+        "ProductName": "Pressure Cooker 4",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 90.50,
+        "StatusCode": 1,
+        "StatusDescription": "Available",
+        "AvailableSince": "2016-11-16T00:00:00"
+    },
+    {
+        "ProductId": 35,
+        "ProductName": "Pressure Cooker",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 90.50,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": "2018-10-21T00:00:00"
+    },
+    {
+        "ProductId": 36,
+        "ProductName": "Coffee Maker 2",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 50.39,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": null
+    },
+    {
+        "ProductId": 37,
+        "ProductName": "Coffee Maker 3",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 49.39,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": null
+    },
+    {
+        "ProductId": 38,
+        "ProductName": "Water Pitcher 3",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 29.99,
+        "StatusCode": 2,
+        "StatusDescription": "Out of Stock",
+        "AvailableSince": null
+    },
+    {
+        "ProductId": 44,
+        "ProductName": "Water Pitcher",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 29.99,
+        "StatusCode": 3,
+        "StatusDescription": "Back Ordered",
+        "AvailableSince": null
+    },
+    {
+        "ProductId": 45,
+        "ProductName": "Pressure Cooker 2",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 91.50,
+        "StatusCode": 3,
+        "StatusDescription": "Back Ordered",
+        "AvailableSince": "2017-10-09T00:00:00"
+    },
+    {
+        "ProductId": 46,
+        "ProductName": "Can Opener 4",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 7.99,
+        "StatusCode": 3,
+        "StatusDescription": "Back Ordered",
+        "AvailableSince": "2016-09-18T00:00:00"
+    },
+    {
+        "ProductId": 49,
+        "ProductName": "Can Opener",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 7.99,
+        "StatusCode": 4,
+        "StatusDescription": "Discontinued",
+        "AvailableSince": "2013-09-18T00:00:00"
+    },
+    {
+        "ProductId": 50,
+        "ProductName": "Coffee Maker",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 49.39,
+        "StatusCode": 4,
+        "StatusDescription": "Discontinued",
+        "AvailableSince": null
+    },
+    {
+        "ProductId": 51,
+        "ProductName": "Coffee Maker 4",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 49.39,
+        "StatusCode": 4,
+        "StatusDescription": "Discontinued",
+        "AvailableSince": null
+    },
+    {
+        "ProductId": 52,
+        "ProductName": "Can Opener 3",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 9.99,
+        "StatusCode": 5,
+        "StatusDescription": "Undefined",
+        "AvailableSince": "2018-09-18T00:00:00"
+    },
+    {
+        "ProductId": 53,
+        "ProductName": "Water Pitcher 4",
+        "CategoryId": 3,
+        "CategoryName": "kitchen",
+        "UnitPrice": 29.99,
+        "StatusCode": 5,
+        "StatusDescription": "Undefined",
+        "AvailableSince": null
+    }
+]

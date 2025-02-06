@@ -1,0 +1,111 @@
+<div class="container" style="padding-bottom: 0;">
+    <div *ngIf="errorMessage !=''" id="message" class="error-message ng-with-newlines">{{errorMessage}}</div>
+    <fieldset>
+        <legend>&#160;{{searchTitle}}&#160;</legend>
+        <div class="form-inline">
+            <div class="form-group">
+                <span>Search by&#160;</span>
+            </div>
+            <div class="form-group">
+                <select id="ddlProductSearchType" class="form-control"
+                        [ngClass]="{'placeholder-color': search.searchType == '', 'control-color': search.searchType != '' }"
+                        [(ngModel)]="search.searchType" (ngModelChange)="onChange($event)" (focus)="errorMessage=''">
+                    <option value="" class="placeholder-color">Please select...</option>
+                    <option *ngFor="let item of productSearchTypes" [ngValue]="item.id" class="control-color">
+                        {{item.name}}
+                    </option>
+                </select>
+            </div>
+            <div class="form-group left-dent">
+                <input id="txtSearchText" type="text" [(ngModel)]="search.searchText" class="form-control"
+                       style="width:250px;" placeholder="Seach Text" maxlength="25" (focus)="errorMessage=''">
+            </div>
+        </div>
+        <div class="bottom-line"></div>
+        <div class="form-inline">
+            <div class="form-group">
+                <span>Price ($): between&#160;</span>
+            </div>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="search.priceLow" class="form-control price-input" id="txtPriceLow" placeholder="Low" (focus)="errorMessage=''">
+            </div>
+            <div class="form-group left-dent">
+                <span>and&#160;</span>
+            </div>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="search.priceHigh" class="form-control price-input" id="txtPriceHigh" placeholder="High" (focus)="errorMessage=''">
+            </div>
+        </div>
+        <div class="bottom-line"></div>
+        <div class="form-inline">
+            <div class="form-group">
+                <span>First available: from&#160;</span>
+            </div>
+            <div class="form-group input-append date first-avail" data-date-format="mm/dd/yyyy">
+                <div class="form-group input-append date first-avail">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" [(ngModel)]="search.dateFrom" class="form-control date-input" id="txtFirstAvailFrom" placeholder="Date from"
+                                       required (focus)="errorMessage=''"
+                                       angular-mydatepicker name="txtFirstAvailFrom"  
+                                       [options]="myDatePickerOptions" [defaultMonth]="defMonth" #dpFrom="angular-mydatepicker"                                       
+                                       [attr.disabled]="dpDisabled?'':null" autocomplete="off">
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default height-to-form-control" (click)="dpFrom.toggleCalendar()"><i class="fa fa-calendar date-picker-icon"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-group left-dent">
+                    <span>to&#160;</span>
+                </div>
+                <div class="form-group input-append date first-avail">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" [(ngModel)]="search.dateTo" class="form-control  date-input" id="txtFirstAvailTo" placeholder="Date to"
+                                       required (focus)="errorMessage=''"
+                                       angular-mydatepicker name="txtFirstAvailTo"  
+                                       [options]="myDatePickerOptions" [defaultMonth]="defMonth" #dpTo="angular-mydatepicker"
+                                       [attr.disabled]="dpDisabled?'':null" autocomplete="off">
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default height-to-form-control" (click)="dpTo.toggleCalendar()"><i class="fa fa-calendar date-picker-icon"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-line"></div>
+        <div class="form-inline">
+            <div class="form-group">
+                <span>Product status:&#160;</span>
+            </div>
+            <div class="form-group">
+                <select id="ddlProductStatusTypes" class="form-control"
+                        [ngClass]="{'placeholder-color':search.statusCode == '', 'control-color': search.statusCode != '' }"
+                        [(ngModel)]="search.statusCode"
+                        style="width: 150px;" (focus)="errorMessage=''">
+                    <option value="" class="placeholder-color">Please select...</option>
+                    <option *ngFor="let item of productStatusTypes" [ngValue]="item.StatusCode" class="control-color">
+                        {{item.Description}}
+                    </option>
+                </select>
+            </div>
+            <div class="form-group" style="margin-left:2.2rem;">
+            </div>
+            <div class="form-group left-dent">
+                <button type="button" class="btn btn-primary" id="btnLoadProductList" (click)="searchGo()">&#160;&#160;Go&#160;&#160;</button>
+            </div>
+            <div class="form-group" style="margin-left:1.33rem;">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-secondary" id="btnClear" (click)="setDefaultSearchItems()">&#160;Clear&#160;</button>
+            </div>
+        </div>
+    </fieldset>
+    <!--<result-panel></result-panel>-->
+</div>

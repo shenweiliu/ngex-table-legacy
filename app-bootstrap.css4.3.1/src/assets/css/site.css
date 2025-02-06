@@ -1,0 +1,391 @@
+/*Ajax loader*/
+.loader-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1100;
+    background-color: white;
+    opacity: .6;
+}
+
+.ajax-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.1rem; /* -1 * image width / 2 */
+    margin-top: -2.1rem; /* -1 * image height / 2 */
+    display: block;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {  
+    /* Margin bottom by footer height */  
+    margin-bottom: 3.3rem; 
+    line-height: 1.33;    
+}
+
+
+.container {
+    width: auto;
+    max-width: 100%;
+    padding: 1rem;
+}
+.container .text-muted {
+    margin: 1rem;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/*Overwrite bootstrap 4*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.col-sm-1-a, .col-sm-2-a, .col-sm-3-a, .col-sm-4-a, .col-sm-5-a, .col-sm-6-a, .col-sm-7-a, .col-sm-8-a, .col-sm-9-a, .col-sm-10-a, .col-sm-11-a, .col-sm-12-a, .col-sm-a, .col-sm-auto-a, .col-md-1-a, .col-md-2-a, .col-md-3-a, .col-md-4-a, .col-md-5-a, .col-md-6-a, .col-md-7-a, .col-md-8-a, .col-md-9-a, .col-md-10-a, .col-md-11-a, .col-md-1a2, .col-md-a, .col-md-auto-a, .col-lg-1-a, .col-lg-2-a, .col-lg-3-a, .col-lg-4-a, .col-lg-5-a, .col-lg-6-a, .col-lg-7-a, .col-lg-8-a, .col-lg-9-a, .col-lg-10-a, .col-lg-11-a, .col-lg-12-a, .col-lg-a, .col-lg-auto-a {
+    /*position: relative;*/ /*defined by each class*/
+    width: 100%;
+    padding-right: 1rem; 
+    padding-left: 1rem;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 25rem;
+}
+
+/*Overwrite Bootstap 4*/
+.btn {
+    border: #c5c5c5 1px solid;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem; 
+    line-height: 1.33;
+}
+.btn:focus { 
+    outline: none;    
+    border: #8A8A8A 1px solid;
+}
+.btn.btn-primary {
+    /*background: #3288e6;*/
+    background: #6ea0d7;
+    color: #fff;
+}
+    
+.btn.btn-primary-disabled {
+    background: #689eda;
+    /*color: #bbb;*/
+    color: #fff;
+    cursor: not-allowed;
+    opacity: .65;
+}
+.btn.btn-secondary {
+    background: #e0e0e0;
+    color: #777;
+}
+
+.btn.btn-secondary-disabled {
+    background: #e0e0e0;
+    color: #777;
+    cursor: not-allowed;
+} 
+
+.btn.btn-success {
+    background: #70a2cb;
+    color: #fff;
+}
+    
+.btn.btn-success-disabled {
+    background: #689eda;
+    /*color: #bbb;*/
+    color: #fff;
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.field-text-box {
+    /*display: inline-block;*/
+    display: block;
+    width: 16rem;
+    margin-bottom: 0.66rem;
+}
+.down_right {
+    margin-top: 0.66rem;
+    margin-right: 0.66rem;
+    float: right;
+}
+
+.pageBodyCell {
+	width: 100%;
+}
+#codesGridBody {
+    width: 900px;
+	
+}
+.tbl_grid {
+	width: 100%;
+	vertical-align: middle;
+}
+.grid-alt-row {
+	background-color: #BFC0C3;
+	background-image: none;
+}
+
+.cursor-pointer-tr tr
+{
+	cursor: pointer;
+}
+.cursor-pointer
+{
+	cursor: pointer;
+}
+.message {
+    color: Green;
+    padding-left: 0.4rem;
+    padding-bottom: 0.4rem;
+    text-align: left;
+}
+.error-message {
+    color: red;
+    padding-left: 0.4rem;
+    padding-bottom: 0.4rem;
+    text-align: left;
+}
+.form-error-message {
+    /*position:absolute;*/
+    padding: 0.3rem;
+    background-color: #E03930;
+    color: black;
+}
+
+.legend-line {
+    font-size: smaller;
+    color: #999999;
+    margin-left: 1.33rem;
+}
+.form-control {
+    height: 2rem;
+    width: 17rem;
+    padding: 0rem 0.4rem;    
+}
+.form-group.low-bottom {
+    /*bootstrap.js sets 15px. low for last item.*/
+    margin-bottom: 0.5rem;
+}
+.height-to-form-control {
+    height: 2rem;
+}
+.label-adjust {
+    padding-top: 0.25rem;
+    font-weight: normal;
+    width: 0.85rem;
+}
+.replace-label-dent {
+    margin-left: 0.85rem !important;
+}
+.remove-left-dent {
+	margin-left: 0 !important;
+}
+.left-dent {
+    margin-left: 0.5rem;
+}
+.bottom-line {
+    margin-bottom: 0.5rem;
+}
+.bottom-border {
+    border-bottom: 1px solid #c5c5c5;
+}
+.top-space {
+    margin-top: 0.5rem;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-pad-right {
+    padding-right: 1rem;
+    float: right;
+}
+.down_right {
+    margin-top: 0.7rem;
+    margin-right: 0.7rem;
+    float: right;
+}
+
+.price-search {
+    width: 8rem;
+    text-align: right;
+}
+
+.placeholder-color {
+    color: #999999;
+    /*color: #007AC4;*/
+}
+.control-color {
+    color: #666;
+}
+
+.col-lbl-1 {
+    width: 8.25rem;
+    float: left;
+}
+.col-inp-1 {
+    width: 19rem;
+    position: relative;
+    min-height: 1px;
+    padding-left: 1rem;    
+    float: left;
+}
+
+.email_form_txt
+{
+    width: 18rem;    
+}
+.email_form_panel
+{
+	border-width: 0.15rem;
+	border-style: solid;
+	border-color: #C0C0C0;
+	width: 100%;
+	background-color: #F2F2F2;
+	font-family: Arial;
+	vertical-align: text-top;
+	text-align: left;
+	font-size: 0.9em;
+}
+#ng-view {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.panel-indent {
+    margin-left: 2%;
+}
+
+.hy-link {
+    font: 1rem 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    /*display: block;*/
+    margin-left: 2%;
+    margin-bottom: 0.66rem;
+    color: #337ab7 !important;
+}
+
+.ng-with-newlines {
+  white-space: pre;
+}
+
+/*ngex-table: overwrite bootstrap*/
+.table {
+    /*width: 100%;
+    margin-bottom: 1rem;*/
+    margin-bottom: 0.5rem;
+}
+.table th, .table td {
+    padding: 0.4rem;
+    /*padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;*/
+}
+/*Switch header bottom border to tbody top border*/
+.table thead th {
+    border-bottom: none;
+    vertical-align: text-top;
+  }
+
+.table tbody {
+    /*border-top: 2px solid #dee2e6;*/
+    border-top: 2px solid #c5c5c5;
+}
+
+.row-group-line {
+    /*#ddd; #d4d3d3;*/
+    border-top: 2px solid #c5c5c5;
+}
+
+/*Overwrite alternative back color*/
+/*.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}*/
+
+.ng-table th.sortable.sort-desc, .ng-table th.sortable.sort-asc {
+    background-color: #ebebeb;
+}
+
+.ng-table th.text-right {
+    text-align: right;
+}
+
+.ng-table th.text-left {
+    text-align: left;
+}
+
+.ng-with-newlines {
+    white-space: pre-line;
+}
+
+
+.help-block {
+    margin-left: 1rem;
+    margin-bottom: 0px;
+}
+
+.field-required {
+    color: #d21c1c;
+    font-weight: bold;
+}
+
+.has-warning-me {
+    border-color: #8a6d3b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.has-error-me {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.hide {
+    display: none !important;
+}
+
+.sort-box-th {
+    text-align: center; 
+    border: none !important; 
+    padding: 0 !important;
+}
+
+.sort-option-link {
+    position: relative;
+    float: right;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 2rem;
+    margin-bottom: 0.25rem;
+    background-color: transparent;
+    background-image: none;
+    font-size: 1.25em;
+}
+
+.option-board-tr th {
+    border-top: none !important;
+    padding: 0 !important;
+}
+
+.table-header-tr th {
+    border-top: none !important;
+}

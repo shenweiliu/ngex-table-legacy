@@ -1,0 +1,51 @@
+/*Overwrite Bootstrap*/
+.col-sm-3 {
+    width: 20%;
+    position: static;
+}
+.col-sm-9 {
+    width: 80%;
+    position: static;    
+}
+.body-align {
+    padding-left: 4%;
+    padding-right: 2%;
+}
+
+/*Adjust top for header height*/
+.adjust-top {
+    margin-top: 70px;
+}
+.header {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    /* Set the fixed height */
+    height: 60px;
+    background-color: #f5f5f5;
+    border-color: #e7e7e7;
+    color: #777;
+    padding: 10px 20px 10px 6%;
+    margin-left: -4%;
+}
+.header .title-size {
+    font-size: 22px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 55px;
+    background-color: #f5f5f5;
+    border-color: #e7e7e7;
+    color: #777;
+    padding: 15px 20px 10px 6%;
+    margin-left: -4%;
+}
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    .body-content {
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,19 @@
+<div class='container-fluid'>
+    <div class='row'>
+        <div class='col-sm-3-a'>
+            <side-menu (menuItemVisited)="onClickMenuItem($event)"></side-menu>
+        </div>
+        <div class='col-sm-9-a body-align'>
+            <div class="header">
+                <span class="title-size">Angular Data Table Demo</span>
+                <a #barButton (click)="toggleCollapse()" class='navbar-toggle cursor-pointer' data-toggle="collapse" data-target='.navbar-collapse'><i class="fa fa-navicon fa-lg"></i></a>
+            </div>
+            <div class="adjust-top">
+                <router-outlet></router-outlet>
+            </div>
+            <footer class="footer">
+                <p>@SPA with Angular and TypeScript</p>
+            </footer>
+        </div>        
+    </div>
+</div>

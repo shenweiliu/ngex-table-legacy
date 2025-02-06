@@ -1,0 +1,48 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999999;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999999;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #999999;
+}
+
+::-webkit-input-placeholder { /* Others */
+    color: #999999;
+}
+
+fieldset {
+    border: 2px solid #cacaca;
+    margin-left: -0.5rem;
+    /*margin-bottom: 0.5rem;*/
+    padding-bottom: 0.5rem;
+    padding-left: 0.85rem;
+}
+
+legend {
+    margin-top: -0.7rem;
+    margin-bottom: 0.25rem;
+    border-bottom: 0;
+    width: auto;
+    font-weight: bold;
+}
+
+/*bs-css 3.3.7 specific
+----*/
+.price-input {
+    width: 8rem;
+}
+
+.date-input {
+    width: 9rem;
+    margin-right: 0.25rem;
+}
+
+.date-picker-icon {
+    font-size: 1.8rem;
+}
+/*----*/

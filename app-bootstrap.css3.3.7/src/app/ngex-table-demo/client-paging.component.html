@@ -1,0 +1,47 @@
+<div style="margin-left: 1rem;">
+    <div *ngIf="errorMsg != ''" class="error-message">{{errorMsg}}</div>
+    <search *ngIf="searchEnabled"
+            [paginationType]="paginationType"
+            [clientDataList]="originalDataList"
+            (searchChanged)="onChangeSearch($event)">
+    </search>    
+    <table class="table table-condensed table-striped bottom-border"
+           [table-main]="pagingParams" (tableChanged)="onChangeTable()">
+        <thead>
+            <tr class="option-board-tr">
+                <th colspan="6">
+                    <options (optionChanged)="onChangeOptions($event)"></options>
+                </th>
+            </tr>
+            <tr #trHead class="table-header-tr">
+                <th>Product Name<column-sort sortBy="ProductName"></column-sort></th>
+                <th>Category ID<column-sort sortBy="CategoryId"></column-sort></th>
+                <th>Category Name<column-sort sortBy="CategoryName"></column-sort></th>
+                <th>Unit Price<column-sort sortBy="UnitPrice"></column-sort></th>
+                <th>Status<column-sort sortBy="StatusDescription"></column-sort></th>
+                <th>Available Since<column-sort sortBy="AvailableSince"></column-sort></th>
+            </tr>
+            <tr>
+                <th colspan="6" class="sort-box-th">
+                    <multi-sort-command (multiSortChanged)="onChangeTable()"></multi-sort-command>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr #trItems *ngFor="let item of rows; let last = last">
+                <td>{{item.ProductName}}</td>
+                <td align="center">{{item.CategoryId}}</td>
+                <td>{{item.CategoryName}}</td>
+                <td>{{item.UnitPrice | currency:"USD":'symbol':"1.2-2"}}</td>
+                <td>{{item.StatusDescription}}</td>
+                <td>{{item.AvailableSince | date:"MM/dd/yyyy"}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination *ngIf="pagingEnabled"
+                [pagingParams]="pagingParams"
+                [pagedLength]="pagedLength"
+                (pageChanged)="onChangeTable($event)">
+    </pagination>
+</div>
+
